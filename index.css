@@ -410,9 +410,125 @@ form input, form textarea {
 
 /* Mobile devices (small screens) */
 
+@media (min-width: 200px) and (max-width: 600px) {
+  * {
+    max-width: 100%;
+  }
+
+  /* Navigation menu */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px; /* Adjust padding for smaller devices */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Smaller margin for narrow screens */
+    font-size: 24px; /* Reduce font size to fit smaller screens */
+  }
+
+  /* Header text */
+  .header-text h1 {
+    font-size: 1.4rem; /* Adjust font size for small screens */
+  }
+
+  /* About section columns */
+  .about-col-1, .about-col-2 {
+    flex: 1;
+    margin: 5px 0;
+  }
+
+  /* Subtitle */
+  .sub-title {
+    font-size: 1.2rem; /* Adjust subtitle font size */
+  }
+
+  /* Tab links */
+  .tab-links {
+    font-size: 0.9rem; /* Reduce font size */
+    margin-right: 5px;
+  }
+
+  /* Services and Work lists */
+  .services-list,
+  .work-list {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  /* Contact section adjustments */
+  .contact-left {
+    margin-bottom: 0.5rem; /* Less margin for smaller devices */
+  }
+
+  .contact-right {
+    margin-top: 1rem; /* Adjust margin */
+  }
+
+  .contact-right form input,
+  .contact-right form textarea {
+    font-size: 0.9rem; /* Slightly smaller font size for form fields */
+  }
+
+  .contact-right form {
+    width: 100%;
+  }
+
+  /* Button adjustments */
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem; /* Adjust padding for better touch on small screens */
+  }
+
+  .contact-right .btn.btn2 {
+    margin: 3px 5px;
+  }
+
+  /* Font size for navigation icons */
+  nav .fa-solid {
+    display: block;
+    font-size: 30px; /* Slightly smaller icons for smaller devices */
+  }
+
+  /* Side menu */
+  nav ul {
+    background: rgb(112, 84, 84);
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide the menu off-screen initially */
+    width: 100%; /* Full width for mobile screens */
+    height: 100%;
+    padding-top: 50px;
+    opacity: 80%;
+    font-weight: bolder;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0px 1rem; /* Smaller margin for narrow screens */
+    font-size: 36px; /* Adjust font size to fit smaller screen */
+    padding: 0;
+    width: 100vw;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .container nav ul li a {
+    color: white;
+  }
+}
+
+
 @media (max-width: 768px) {
   * {
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   nav ul {
@@ -518,7 +634,7 @@ form input, form textarea {
 /* Tablets (medium screens) */
 @media (min-width: 768px) and (max-width: 1024px) {
   * {
-    max-width: 100vw;
+    max-width: 100%;
   }
 
   nav ul {
