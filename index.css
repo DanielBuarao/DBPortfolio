@@ -410,7 +410,7 @@ form input, form textarea {
 
 /* Mobile devices (small screens) */
 
-@media (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   * {
     max-width: 100%;
   }
