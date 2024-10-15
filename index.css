@@ -314,7 +314,7 @@ nav ul li a:hover::after {
 
 .btn {
   display: block;
-  margin: 20px auto;
+  margin: 5rem auto;
   width: fit-content;
   border: 1px solid #ff004f;
   padding: 15px 50px;
@@ -331,7 +331,7 @@ nav ul li a:hover::after {
 /* Contact */
 
 #contact {
-  margin: -50px 0px;
+  margin: -140px 0px;
 }
 
 .contact-left {
