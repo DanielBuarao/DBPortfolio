@@ -411,7 +411,10 @@ form input, form textarea {
 /* Mobile devices (small screens) */
 @media (min-width: 100px) and (max-width: 600px) {
   * {
-    max-width: 100vw;
+    max-width: fit-content;
+  }
+  .logo {
+    margin-left: -5px;
   }
 
   nav ul {
@@ -424,12 +427,13 @@ form input, form textarea {
   }
 
   .header-text h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .about-col-1, .about-col-2 {
     flex: 1;
     margin: 10px 0;
+    position: relative;
   }
 
   .sub-title {
@@ -443,15 +447,19 @@ form input, form textarea {
 
   .services-list {
     grid-template-columns: 1fr;
+    position: relative;
+    
   }
 
   .work-list {
     grid-template-columns: 1fr;
+    position: relative;
   }
 
   .contact-left {
     margin-top: -20px;
     margin-left: 30px;
+    position: relative;
   }
 
   .contact-left p{
@@ -474,8 +482,8 @@ form input, form textarea {
   }
 
   .btn {
-    width: 100%;
-    text-align: center;
+    width: fit-content;
+
   }
 
   .contact-right .btn.btn2 {
@@ -485,6 +493,7 @@ form input, form textarea {
   nav .fa-solid {
     display: block;
     font-size: 40px;
+    margin-right: -50px;
   }
   nav ul {
     background: rgb(112, 84, 84);
@@ -541,6 +550,7 @@ form input, form textarea {
   .about-col-1, .about-col-2 {
     flex: 1;
     margin: 10px 0;
+    position: relative;
   }
 
   .sub-title {
