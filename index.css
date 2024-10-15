@@ -128,8 +128,9 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-  margin-top: 20px;
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   border-radius: 15px;
 }
@@ -410,8 +411,13 @@ form input, form textarea {
 
 /* Mobile devices (small screens) */
 @media (min-width: 100px) and (max-width: 600px) {
+
   * {
     max-width: 100vw;
+  }
+
+  .row {
+    flex-direction: column;
   }
 
   body {
@@ -449,15 +455,13 @@ form input, form textarea {
 
   .about-col-1, .about-col-2 {
     flex: 1;
-    margin: 10px 0;
+    margin: 20px 0;
     position: relative;
     text-align: left;
   }
 
   .about-col-1 img {
-    margin: 0 auto;
-    width: 100%;
-    border-radius: 10px;
+    grid-column: auto;
   }
 
   .sub-title {
@@ -515,9 +519,10 @@ form input, form textarea {
   }
   
   nav .fa-solid {
-    display: block;
+    display: flex;
     font-size: 40px;
-    margin-right: -20px;
+    justify-content: left;
+    align-items: left;
   }
   nav ul {
     background: rgb(112, 84, 84);
@@ -576,7 +581,6 @@ form input, form textarea {
 
   .about-col-1, .about-col-2 {
     flex: 1;
-    margin: 10px 0;
     position: relative;
   }
 
@@ -638,7 +642,7 @@ form input, form textarea {
     padding-top: 50px;
     opacity: 80%;
     font-weight: bolder;
-    z-index: 2;
+    z-index: 3;
     transition: 1s;
   }
   nav ul li{
@@ -646,7 +650,6 @@ form input, form textarea {
     margin: 0px 2rem;
     font-size: 100px;
     padding: 0;
-    width: 100vw;
 
   }
   nav ul .fa-solid {
