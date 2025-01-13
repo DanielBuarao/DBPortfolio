@@ -129,9 +129,9 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
+  justify-content: left;
+  align-items: left;
+  width: 50%;
   border-radius: 15px;
 }
 
