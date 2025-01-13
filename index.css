@@ -131,7 +131,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: left;
   align-items: left;
-  width: 50%;
+  width: 85%;
   border-radius: 15px;
 }
 
