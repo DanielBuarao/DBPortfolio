@@ -130,7 +130,7 @@ nav ul li a:hover::after {
 .about-col-1 img {
   display: flex;
   justify-content: left;
-  align-items: left;
+
   width: 100vw;
   border-radius: 15px;
 }
